@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body ng-app="myApp">
+	  <div ng-controller="myCtrl">
+	    <input ng-model="x">
+		  <ul style="list-style:none;">
+			  <li ng-repeat="product in products | filter:{'name':x}">{{product.name | capitalize}} {{product.price | currency}}</li>
+		  </ul>
+		  <select ng-model="limitNumber">
+			  <option ng-repeat="num in [1,2,3,4,5]">{{num}}</option>
+		  </select>
+	  </div>
+  </body>
+</html>
