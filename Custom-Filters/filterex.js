@@ -19,7 +19,7 @@ app.controller('myCtrl',function($scope,$http)
 		/*app.filter('reverse',function()
 		{
   				return function(result){
-  				  var result = $scope.employees;
+  				  var result = $scope.products;
 						return result.name.split('').reverse().join('')
   		};
 
